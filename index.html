@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizzaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link  rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzaria</a>
+        <div class="topnav-right">
+         <a href="#viewblock">View Menu</a>
+         <a href="#addTopings">Add Menu</a>
+        </div>
+    </div>
+
+    <div class="row" id="viewblock">
+        <div  class="img_div"> 
+            <img class="img-responsive"  src="http://127.0.0.1:5500/images/pizza.png">
+        </div>
+      <!-- Add menu_div here and create button to call getmenu() -->
+      <button id="opb" onclick="opgazab()">
+         Show Menu
+      </button>
+      <section id="suprop">
+
+      </section>
+    </div>
+    
+    <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add toppings?"/></br>
+            <button id="add_toppings" onclick="gazab()" >Recommend a new Pizza</button>
+        </div>
+        <span id="pp1"></span>
+        <section id="hided1" class="secop" style="margin-bottom: 30px; background-color: rgb(55, 216, 23); text-align: center; height: 150px; width: 200px; margin-left: 700px;">
+            <span class="spop" id="p1">
+                <img class="imgop" style="height: 100px;" src="https://th.bing.com/th/id/R9e63f21deaeb3e22ec1b5e7acb623096?rik=ZhjeUE0h%2b59gkA&riu=http%3a%2f%2fimages.clipartpanda.com%2fpizza-cartoon-xcgK4rKki.png&ehk=4g2%2frLOJ3E3SaYWmWL%2bYMhUyX%2fA0FkSs3vWo90x8qAg%3d&risl=&pid=ImgRaw">
+                <h3>Cheese pizza</h3>
+            </span>
+          </section>
+          <span id="pp1"></span>
+            <section id="hided2" class="secop"  style="margin-bottom: 30px; background-color: rgb(55, 216, 23); text-align: center; height: 150px; width: 200px; margin-left: 700px;">
+            <span class="spop" id="p2">
+                <img class="imgop" style="height: 100px;" src="https://th.bing.com/th/id/R9e63f21deaeb3e22ec1b5e7acb623096?rik=ZhjeUE0h%2b59gkA&riu=http%3a%2f%2fimages.clipartpanda.com%2fpizza-cartoon-xcgK4rKki.png&ehk=4g2%2frLOJ3E3SaYWmWL%2bYMhUyX%2fA0FkSs3vWo90x8qAg%3d&risl=&pid=ImgRaw">
+                <h3>Super Large pizza</h3>
+            </span>
+          </section>
+          <span id="pp1"></span>
+          <section id="hided3" class="secop" style="margin-bottom: 30px; background-color: rgb(55, 216, 23); text-align: center; height: 150px; width: 200px; margin-left: 700px;">
+            <span class="spop" id="p3">
+                <img class="imgop" style="height: 100px;" src="https://th.bing.com/th/id/R9e63f21deaeb3e22ec1b5e7acb623096?rik=ZhjeUE0h%2b59gkA&riu=http%3a%2f%2fimages.clipartpanda.com%2fpizza-cartoon-xcgK4rKki.png&ehk=4g2%2frLOJ3E3SaYWmWL%2bYMhUyX%2fA0FkSs3vWo90x8qAg%3d&risl=&pid=ImgRaw">
+                <h3>Pocket pizza</h3>
+            </span>
+          </section>
+          <section id="hided4" class="secop" style="margin-bottom: 30px; background-color: rgb(55, 216, 23); text-align: center; height: 150px; width: 200px; margin-left: 700px;">
+            <span class="spop" id="p4">
+                <img class="imgop" style="height: 100px;" src="https://th.bing.com/th/id/R9e63f21deaeb3e22ec1b5e7acb623096?rik=ZhjeUE0h%2b59gkA&riu=http%3a%2f%2fimages.clipartpanda.com%2fpizza-cartoon-xcgK4rKki.png&ehk=4g2%2frLOJ3E3SaYWmWL%2bYMhUyX%2fA0FkSs3vWo90x8qAg%3d&risl=&pid=ImgRaw">
+                <h3>Fun pizza</h3>
+            </span>
+          </section>
+          <section id="hided5" class="secop" style="margin-bottom: 30px; background-color: rgb(55, 216, 23); text-align: center; height: 150px; width: 200px; margin-left: 700px;">
+            <span class="spop" id="p5">
+                <img class="imgop" style="height: 100px;" src="https://th.bing.com/th/id/R9e63f21deaeb3e22ec1b5e7acb623096?rik=ZhjeUE0h%2b59gkA&riu=http%3a%2f%2fimages.clipartpanda.com%2fpizza-cartoon-xcgK4rKki.png&ehk=4g2%2frLOJ3E3SaYWmWL%2bYMhUyX%2fA0FkSs3vWo90x8qAg%3d&risl=&pid=ImgRaw">
+                <h3>Party pizza</h3>
+            </span>
+          </section>
+          <section id="hided6">
+
+          </section>
+          <section id="hided7">
+
+          </section>
+          <section id="hided8">
+
+          </section>
+          <section id="hided9">
+
+          </section>
+          <section id="hided10">
+
+          </section>
+          <section id="hided11">
+
+          </section>
+          <section id="hided12">
+
+          </section>
+          <section id="hided13">
+
+          </section>
+          <section id="hided14">
+
+          </section>
+          <section id="hided15">
+
+          </section>
+          <section id="hided16">
+
+          </section>
+          <section id="hided17">
+
+          </section>
+          <section id="hided18">
+
+          </section>
+          <section id="hided19">
+
+          </section>
+          <section id="hided20">
+
+          </section>
+          <section id="hided21">
+
+          </section>
+          <section id="hided22">
+
+          </section>
+          <section id="hided23">
+
+          </section>
+          <section id="hided24">
+
+          </section>
+          <section id="hided25">
+
+          </section>
+        <img class="img-responsive"  src="http://127.0.0.1:5500/images/topping.png">
+    </div>
+     
+</body>
+</html>
